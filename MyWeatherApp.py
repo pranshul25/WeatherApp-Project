@@ -9,7 +9,7 @@ WIDTH = 550
 # functions for retrieving data from the Open Weather Map server and formatting into desired output
 
 def get_weather(city):
-    weather_key = 'c6f00f528c4c374f27895edb343ee34b'
+    weather_key = ''
     url = 'https://api.openweathermap.org/data/2.5/weather'
     params = {'APPID': weather_key, 'q': city, 'units': 'metric'}
     response = requests.get(url, params=params)
